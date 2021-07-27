@@ -23,3 +23,12 @@ const alunos = [
     }
 ];
 
+const alunosResumidos = [];
+
+for (let aluno of alunos) {
+    const { nome, idade, email, curso } = aluno;
+    const novasInformacoes = { nome, idade, email, curso };
+    alunosResumidos.push(novasInformacoes);
+}
+console.log(alunosResumidos)
+
